@@ -29,7 +29,6 @@ spec:
       - name: PG_PWD
           valueFrom:
             secretKeyRef:
-                name: pgpassword  --setada via Secret do kubernetes (linha de comando)
-                key: MYPGPASSWORD --setada via Secret do kubernetes (linha de comando)  
-
+                name: pgpassword
+                key: PG_PWD
 
