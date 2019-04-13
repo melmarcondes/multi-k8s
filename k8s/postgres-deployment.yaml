@@ -14,8 +14,8 @@ spec:
   spec:
    volumes:
     - name: postgres-storage
-    persistentVolumeClaim:
-     claimName: database-persistent-volume-claim
+      persistentVolumeClaim:
+       claimName: database-persistent-volume-claim
    containers:
     - name: postgres
       image: postgres
@@ -23,12 +23,13 @@ spec:
        - containerPort: 5432
       volumeMounts:
        - name: postgres-storage
-       mountPath: /var/lib/postgresql/data
-       subPath: postgres
+         mountPath: /var/lib/postgresql/data
+         subPath: postgres
       env:
       - name: PG_PWD
           valueFrom:
             secretKeyRef:
                 name: pgpassword
-                key: PG_PWD
+                key: PG_PWD ##setada via Secret do kubernetes (linha de comando) 
+
 
