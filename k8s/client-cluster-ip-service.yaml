@@ -7,6 +7,6 @@ spec:
  selector:  
   component: web
  ports:
-  - port: 3050
+  - port: 3000
     targetPort:  3000
 
