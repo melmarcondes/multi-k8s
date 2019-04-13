@@ -28,8 +28,8 @@ spec:
       env:
        - name: PG_PWD
          valueFrom:
-         secretKeyRef:
-          name: pgpassword
-          key: PG_PWD ##setada via Secret do kubernetes (linha de comando) 
+          secretKeyRef:
+           name: pgpassword
+           key: PG_PWD ##setada via Secret do kubernetes (linha de comando) 
 
 
