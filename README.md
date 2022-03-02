@@ -1,2 +1,2 @@
 # multi-k8s
-NodeJs + Kubernetes + AWS
+Udemy training: NodeJs + Kubernetes + AWS
